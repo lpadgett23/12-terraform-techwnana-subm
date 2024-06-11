@@ -135,7 +135,7 @@ resource "aws_default_security_group" "default-sg" {
         to_port = 22
         protocol = "TCP"
         cidr_blocks = [var.my_ip]
-    }
+    } 
 
     ingress {
         from_port = 8080
