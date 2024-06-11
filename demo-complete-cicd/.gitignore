@@ -3,7 +3,6 @@
 
 # tf state files
 *.tfstate
-*.tfstate
 *.tfstate.*
 
 # tf variable file may include sensitive data
