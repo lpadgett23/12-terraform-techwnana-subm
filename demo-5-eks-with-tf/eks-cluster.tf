@@ -4,6 +4,7 @@ module "eks" {
 
   cluster_name = "myapp-eks-tfcluster"
   cluster_version = "1.29"
+  cluster_endpoint_public_access = true
 
   subnet_ids = module.myapp-vpc.private_subnets
   vpc_id = module.myapp-vpc.vpc_id
