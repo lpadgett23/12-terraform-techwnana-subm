@@ -13,7 +13,7 @@ pipeline {
     maven 'maven-3.9'
   }
   environment {
-    IMAGE_NAME = 'lepcloud23/demo-app:java-maven-2.0-tf-1'
+    IMAGE_NAME = 'lepcloud23/demo-app:java-maven-2.0-tf-2'
   }
   stages {
     stage("build app") {
