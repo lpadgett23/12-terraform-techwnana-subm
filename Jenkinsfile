@@ -13,7 +13,7 @@ pipeline {
     maven 'maven-3.9'
   }
   environment {
-    IMAGE_NAME = 'lepcloud23/demo-app:java-maven-12.2.0-tf-5'
+    IMAGE_NAME = 'lepcloud23/demo-app:java-maven-12.2.0-tf-6'
   }
   stages {
     stage("build app") {
@@ -60,7 +60,7 @@ pipeline {
       steps {
         script {
           echo "waiting for EC2 server to initialise"
-          sleep(time: 90, unit: "SECONDS")
+          sleep(time: 180, unit: "SECONDS")
           
           echo 'deploying docker image to EC2...'
           echo "${EC2_PUBLIC_IP}"
